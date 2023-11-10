@@ -6,7 +6,8 @@
     height: max-content;
     border: 2px solid #000;
     position: relative;
-    margin: 0 6px;
+    margin: 0 5px;
+    float: left;
 }
 
 .title-detail-1 {
@@ -53,26 +54,50 @@
     justify-content: end;
 }
 
-.desc-1 {
+.description {
     padding: 10px;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box;
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .card-1 {
-        width: 48%;
+    .content {
+        box-sizing: border-box;
     }
-    .card-2{
-        width: 48%;
+    .card-1 {
+        width: 50%;
+        float: left;
+    }
+
+    .card-2 {
+        width: 46%;
     }
 
     .card-3 {
-        width: 100%;
+        width: 98%;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .content {
+        box-sizing: border-box;
+    }
+    .card-1 {
+        width: 97%;
+        float: left;
     }
 
+    .card-2 {
+        width: 97%;
+        margin-top: 20px;
+    }
+
+    .card-3 {
+        width: 97%;
+        margin-top: 20px;
+    }
 }
